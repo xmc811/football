@@ -103,4 +103,6 @@ colnames(df) <- c("rank", "diff", "home", "weight", "score")
 
 rank_2018 <- filter(rank, rank_date == as.Date(rank_dates[length(rank_dates)]))
 
+save(rank_2018, file = "rank_2018.rda")
+
 
